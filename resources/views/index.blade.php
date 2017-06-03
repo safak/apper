@@ -43,7 +43,7 @@
                 <h3>Simple. Secure..<br>
                     Reliable messaging...</h3>
                 <p>With our app, you'll get fast, simple, secure messaging and calling for free, available on phones all over the world.</p>
-                <ul class="phone-list">
+                <ul class="phone-list hidden-sm-down">
                     <li>
                         <i class="fa fa-android" aria-hidden="true"></i>
                         <a href="#download">Android</a>
@@ -58,7 +58,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-md-6 text-center wow fadeInRight">
+            <div class="col-md-6 home-phone text-center wow fadeInRight">
                 <img src="{{asset(('storage/web-folder/images/phone.png'))}}" alt="">
             </div>
         </div>
@@ -141,7 +141,7 @@
         </div>
         <div class="security-content">
             <div class="row">
-                <div class="col-md-6 wow zoomIn">
+                <div class="col-md-6 wow zoomIn img-div text-center">
                     <img class="img-circle-security" src="{{asset(('storage/web-folder/images/secure.png'))}}" alt="">
                 </div>
                 <div class="col-md-6 wow rotateInUpLeft">
