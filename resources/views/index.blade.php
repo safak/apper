@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Safak.co</title>
-    <link rel="stylesheet" href="{{asset(('storage/web-folder/css/bootstrap.min.css'))}}">
-    <link rel="stylesheet" href="{{asset(('storage/web-folder/css/main.css'))}}">
-    <link rel="stylesheet" href="{{asset(('storage/web-folder/css/font-awesome.min.css'))}}">
-    <link rel="stylesheet" href="{{asset(('storage/web-folder/css/animate.css'))}}">
+    <link rel="stylesheet" href="storage/app/public/web-folder/css/bootstrap.min.css">
+    <link rel="stylesheet" href="storage/app/public/web-folder/css/main.css">
+    <link rel="stylesheet" href="storage/app/public/web-folder/css/font-awesome.min.css">
+    <link rel="stylesheet" href="storage/app/public/web-folder/css/animate.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
 <body>
@@ -16,7 +16,7 @@
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="#"><img height="35" src="{{asset(('storage/web-folder/images/logo.png'))}}" alt="Golden Website"></a>
+        <a class="navbar-brand" href="#"><img height="35" src="storage/app/public/web-folder/images/logo.png" alt="Golden Website"></a>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
@@ -59,7 +59,7 @@
                 </ul>
             </div>
             <div class="col-md-6 home-phone text-center wow fadeInRight">
-                <img src="{{asset(('storage/web-folder/images/phone.png'))}}" alt="">
+                <img src="storage/app/public/web-folder/images/phone.png" alt="">
             </div>
         </div>
     </div>
@@ -82,12 +82,12 @@
                         ssim. Donec porttitora entum suscipit.</p>
                 </div>
                 <div class="col-md-4 hidden-sm-down text-center">
-                    <img class="img-circle-features" src="{{asset(('storage/web-folder/images/1.png'))}}" alt="">
+                    <img class="img-circle-features" src="storage/app/public/web-folder/images/1.png" alt="">
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-4 offset-sm-4 hidden-sm-down text-center">
-                    <img class="img-circle-features" src="{{asset(('storage/web-folder/images/2.png'))}}" alt="">
+                    <img class="img-circle-features" src="storage/app/public/web-folder/images/2.png" alt="">
                 </div>
                 <div class="col-md-4 wow flipInX">
                     <h4>Groups to keep in touch</h4>
@@ -108,12 +108,12 @@
                         ssim. Donec porttitora entum suscipit.</p>
                 </div>
                 <div class="col-md-4 hidden-sm-down text-center">
-                    <img class="img-circle-features" src="{{asset(('storage/web-folder/images/3.png'))}}" alt="">
+                    <img class="img-circle-features" src="storage/app/public/web-folder/images/3.png" alt="">
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-4 offset-sm-4 hidden-sm-down text-center">
-                    <img class="img-circle-features" src="{{asset(('storage/web-folder/images/4.png'))}}" alt="">
+                    <img class="img-circle-features" src="storage/app/public/web-folder/images/4.png" alt="">
                 </div>
                 <div class="col-md-4 wow flipInX">
                     <h4>Security by Default</h4>
@@ -126,7 +126,7 @@
             </div>
             <div class="row">
                 <div class="col-md-4 offset-sm-4 hidden-sm-down text-center">
-                    <img class="img-circle-features" src="{{asset(('storage/web-folder/images/5.png'))}}" alt="">
+                    <img class="img-circle-features" src="storage/app/public/web-folder/images/5.png" alt="">
                 </div>
             </div>
         </div>
@@ -142,7 +142,7 @@
         <div class="security-content">
             <div class="row">
                 <div class="col-md-6 wow zoomIn img-div text-center">
-                    <img class="img-circle-security" src="{{asset(('storage/web-folder/images/secure.png'))}}" alt="">
+                    <img class="img-circle-security" src="storage/app/public/web-folder/images/secure.png" alt="">
                 </div>
                 <div class="col-md-6 wow rotateInUpLeft">
                     <h4>Privacy and Security is in our DNA</h4>
@@ -200,25 +200,22 @@
 <section id="download">
     <div class="container">
         <div class="download-top text-center">
-            <h3>DOWNLOAD</h3>
-            <p>Proin iaculis purus consequat sem cure.</p>
+            <h3>Discover what all the<br> buzz is about!</h3>
+            <p>Our app is available on any mobile device! Download now to get started!</p>
         </div>
         <div class="download-content text-center">
             <div class="row">
-                <div class="col-md-4 wow fadeInLeft">
-                    <img width="100" src="{{asset(('storage/web-folder/images/android.png'))}}" alt="download for android">
-                    <h4>Android</h4>
-                    <p><a href="#">Download</a> for android device</p>
+                <div class="col-md-4 wow fadeInLeft jus">
+                    <img width="100" src="storage/app/public/web-folder/images/android.png" alt="download for android"><br>
+                    <img width="150" src="storage/app/public/web-folder/images/googleplay.png">
                 </div>
                 <div class="col-md-4 wow fadeIn">
-                    <img width="100" src="{{asset(('storage/web-folder/images/iphone.png'))}}" alt="download for iphone">
-                    <h4>iPhone</h4>
-                    <p><a href="#">Download</a> for apple device</p>
+                    <img width="120" src="storage/app/public/web-folder/images/iphone.png" alt="download for iphone"><br>
+                    <img width="170" src="storage/app/public/web-folder/images/appstore.png">
                 </div>
                 <div class="col-md-4 wow fadeInRight">
-                    <img width="100" src="{{asset(('storage/web-folder/images/windowsphone.png'))}}" alt="download for windows">
-                    <h4>Windows</h4>
-                    <p><a href="#">Download</a> for windows device</p>
+                    <img width="100" src="storage/app/public/web-folder/images/windowsphone.png" alt="download for windows"><br>
+                    <img width="150" src="storage/app/public/web-folder/images/windowsphoneicon.png">
                 </div>
             </div>
         </div>
@@ -251,12 +248,12 @@
     </div>
 </section>
 
-<script src="{{asset(('storage/web-folder/js/jquery-3.2.1.min.js'))}}"></script>
-<script src="{{asset(('storage/web-folder/js/bootstrap.min.js'))}}"></script>
-<script src="{{asset(('storage/web-folder/js/wow.min.js'))}}"></script>
+<script src="storage/app/public/web-folder/js/jquery-3.2.1.min.js"></script>
+<script src="storage/app/public/web-folder/js/bootstrap.min.js"></script>
+<script src="storage/app/public/web-folder/js/wow.min.js"></script>
 <script>
     new WOW().init();
 </script>
-<script src="{{asset(('storage/web-folder/js/main.js'))}}"></script>
+<script src="storage/app/public/web-folder/js/main.js"></script>
 </body>
 </html>

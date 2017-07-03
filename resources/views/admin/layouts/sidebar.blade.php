@@ -12,7 +12,6 @@
                 </ul>
             </li>
             <li><a href="{{route('admin.download.index')}}"><i class="icon-download"></i><span class="hidden-tablet"> Download</span></a></li>
-            <li><a href="{{route('admin.devices.index')}}"><i class="icon-phone"></i><span class="hidden-tablet"> Devices</span></a></li>
             <li><a href="{{route('admin.settings.index')}}"><i class="icon-dashboard"></i><span class="hidden-tablet"> Settings</span></a></li>
         </ul>
     </div>

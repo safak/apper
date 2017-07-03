@@ -13,80 +13,66 @@
         </ul>
 
         <div class="container">
+            @if (session('message'))
+                <div class="alert alert-success">
+                    {{ session('message') }}
+                </div>
+            @endif
             <div class="row" style="margin-bottom: 50px">
-                @if (session('message'))
-                    <div class="alert alert-success">
-                        {{ session('message') }}
-                    </div>
-                @endif
                     <div class="home-form span1">
-                        <img src="{{asset('storage/web-folder/images/android.png')}}" alt="">
+                        <img src="{{asset('storage/app/public/web-folder/images/android.png')}}" alt="">
                     </div>
                 <div class="home-form span3">
-                    <form action="">
+                    <form action="{{route('admin.download.update')}}" method="post">
                         {{csrf_field()}}
                         <div class="form-control">
                             <label for="title">Title:</label>
-                            <input type="text">
+                            <input type="text" value="{{$android->name}}">
                         </div>
                         <div class="form-control">
                             <label for="title">Description:</label>
-                            <input type="text">
+                            <input type="text" value="{{$android->desc}}">
                         </div>
                         <div class="form-control">
                             <label for="title">Link:</label>
-                            <input type="text">
+                            <input type="text" value="{{$android->link}}">
                         </div>
-                        <div class="form-control">
-                            <label for="title">Image:</label>
-                            <input type="file">
-                        </div>
+
                 </div>
                     <div class="home-form span1">
-                        <img src="{{asset('storage/web-folder/images/iphone.png')}}" alt="">
+                        <img src="{{asset('storage/app/public/web-folder/images/iphone.png')}}" alt="">
 
                     </div>
                     <div class="home-form span3">
-                        <form action="">
-                            {{csrf_field()}}
                             <div class="form-control">
                                 <label for="title">Title:</label>
-                                <input type="text">
+                                <input type="text" value="{{$iphone->name}}">
                             </div>
                             <div class="form-control">
                                 <label for="title">Description:</label>
-                                <input type="text">
+                                <input type="text" value="{{$iphone->desc}}">
                             </div>
                             <div class="form-control">
                                 <label for="title">Link:</label>
-                                <input type="text">
+                                <input type="text" value="{{$iphone->link}}">
                             </div>
-                            <div class="form-control">
-                                <label for="title">Image:</label>
-                                <input type="file">
-                            </div>
+
                     </div>
                     <div class="home-form span1">
-                        <img src="{{asset('storage/web-folder/images/windowsphone.png')}}" alt="">
+                        <img src="{{asset('storage/app/public/web-folder/images/windowsphone.png')}}" alt="">
                     </div>
                     <div class="home-form span3">
-                        <form action="">
-                            {{csrf_field()}}
                             <div class="form-control">
                                 <label for="title">Title:</label>
-                                <input type="text">
+                                <input type="text" value="{{$windows->name}}">
                             </div>
                             <div class="form-control">
                                 <label for="title">Description:</label>
-                                <input type="text">
+                                <input type="text" value="{{$windows->desc}}">
                             </div>
                             <div class="form-control">
                                 <label for="title">Link:</label>
-                                <input type="text">
-                            </div>
-                            <div class="form-control">
-                                <label for="title">Image:</label>
-                                <input type="file">
+                                <input type="text" value="{{$windows->link}}">
                             </div>
                     </div>
                 <div class="row">

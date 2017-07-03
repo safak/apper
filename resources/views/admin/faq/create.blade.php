@@ -13,14 +13,14 @@
         </ul>
 
         <div class="container">
+            @if (session('message'))
+                <div class="alert alert-success">
+                    {{ session('message') }}
+                </div>
+            @endif
             <div class="row">
-                @if (session('message'))
-                    <div class="alert alert-success">
-                        {{ session('message') }}
-                    </div>
-                @endif
                     <div class="home-form span4">
-                        <form action="">
+                        <form action="{{route('admin.faq.store')}}" method="post">
                             {{csrf_field()}}
                             <div class="form-control">
                                 <label for="title">Question:</label>

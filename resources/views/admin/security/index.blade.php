@@ -13,22 +13,22 @@
         </ul>
 
         <div class="container">
+            @if (session('message'))
+                <div class="alert alert-success">
+                    {{ session('message') }}
+                </div>
+            @endif
             <div class="row">
-                @if (session('message'))
-                    <div class="alert alert-success">
-                        {{ session('message') }}
-                    </div>
-                @endif
                 <div class="home-form span4">
-                    <form action="">
+                    <form action="{{route('admin.security.update')}}" method="post">
                         {{csrf_field()}}
                         <div class="form-control">
                             <label for="title">Title:</label>
-                            <input type="text">
+                            <input type="text" value="{{$security->title}}">
                         </div>
                         <div class="form-control">
                             <label for="title">Description:</label>
-                            <textarea name="desc" id="desc" cols="30" rows="10"></textarea>
+                            <textarea name="desc" id="desc" cols="30" rows="10">{{$security->desc}}</textarea>
                         </div>
                 </div>
                 <div class="home-img span4">
@@ -44,7 +44,7 @@
                     <div class="home-img span4">
                         <div class="form-control">
                             <label for="title">Current Image:</label>
-                            <img width="200" src="{{asset('storage/web-folder/images/secure.png')}}" alt="">
+                            <img width="200" src="{{asset('storage/app/public/web-folder/images/'.$security->img)}}" alt="">
                         </div><br>
                     </div>
             </div>

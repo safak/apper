@@ -13,22 +13,22 @@
         </ul>
 
         <div class="container">
+            @if (session('message'))
+                <div class="alert alert-success">
+                    {{ session('message') }}
+                </div>
+            @endif
             <div class="row">
-                @if (session('message'))
-                    <div class="alert alert-success">
-                        {{ session('message') }}
-                    </div>
-                @endif
                 <div class="home-form span4">
-                    <form action="">
+                    <form action="{{route('admin.home.update')}}" method="post">
                         {{csrf_field()}}
                         <div class="form-control">
                             <label for="title">Title:</label>
-                            <input class="span12" type="text">
+                            <input class="span12" type="text" value="{{$home->title}}">
                         </div>
                         <div class="form-control">
                             <label for="title">Description:</label>
-                            <textarea class="span12" name="desc" id="desc" cols="30" rows="10"></textarea>
+                            <textarea class="span12" name="desc" id="desc" cols="30" rows="10">{{$home->desc}}</textarea>
                         </div>
 
                 </div>
@@ -51,10 +51,9 @@
                     </form>
                 </div>
                 <div class="home-img span4">
-                    <img width="180" src="{{asset('storage/web-folder/images/phone.png')}}" alt="">
+                    <img width="180" src="storage/app/public/web-folder/images/{{$home->img}}">
                 </div>
             </div>
         </div>
-
     </div>
 @endsection
